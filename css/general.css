@@ -1,0 +1,75 @@
+/*
+primary color: #3b5bdb
+main tint: #182458
+
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #3b5bdb;
+  z-index: -1;
+  margin-bottom: 4.8rem;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.main-header {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #3b5bdb;
+}
+
+.primary-btn:link,
+.primary-btn:visited {
+  border: none;
+  padding: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ebeffb;
+  background-color: #3b5bdb;
+  margin-right: auto;
+  border-radius: 40px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+}
+
+.primary-btn:hover,
+.primary-btn:active {
+  cursor: pointer;
+  background-color: #ebeffb;
+  box-shadow: inset 0 0 0 2px #3b5bdb;
+  color: #3b5bdb;
+}
+
+.secondary-header {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #ebeffb;
+}
+
+.mb-mid {
+  margin-bottom: 4.8rem;
+}

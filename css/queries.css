@@ -1,0 +1,200 @@
+@media (max-width: 79em) {
+  .project {
+    grid-template-columns: 1fr 3fr;
+    row-gap: 2rem;
+  }
+  .tech-list {
+    display: flex;
+    gap: 1.4rem;
+  }
+  .personality-container {
+    grid-template-columns: 1fr;
+  }
+  .perso-skills {
+    margin-bottom: 4.8rem;
+    flex-direction: row;
+  }
+  .lang-skills {
+    margin-left: auto;
+  }
+  .contact-item:link,
+  .contact-item:visited {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 67em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 59em) {
+  .project {
+    grid-template-columns: 1fr 4fr;
+  }
+  .project-details {
+    grid-row: 2;
+    gap: 1rem;
+  }
+  .contact-item:link,
+  .contact-item:visited {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 51em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 48em) {
+  .overview-section {
+    grid-template-columns: 1fr;
+  }
+  .text-container {
+    grid-row: 1;
+    margin-bottom: 4.8rem;
+  }
+  .primary-btn:link,
+  .primary-btn:visited {
+    margin-right: 0;
+  }
+  .certificates-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .experiance-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-container {
+    flex-direction: row;
+    margin-bottom: 4.8rem;
+  }
+
+  .tech-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 48em) {
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+    transition: all 1s;
+    border-radius: 50%;
+  }
+  .nav-list {
+    background-color: #3b5bdb;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 5;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .nav-open .nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .nav-list .nav-item .nav-link:link,
+  .nav-open .nav-list .nav-item .nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+  }
+  .tech-list {
+    display: flex;
+  }
+  .projects-list {
+    gap: 10rem;
+  }
+  .work-container,
+  .study-container {
+    grid-template-columns: 1fr;
+  }
+  .img-box-perso img {
+    height: 20rem;
+    width: 20rem;
+  }
+  .contact-list-links {
+    grid-template-columns: 1fr;
+  }
+  .footer-nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}
+
+@media (max-width: 42em) {
+  .intro-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 36em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (max-width: 32em) {
+  .contact-item:link,
+  .contact-item:visited {
+    font-size: 2.4rem;
+  }
+  .img-box-perso img {
+    height: 18rem;
+    width: 18rem;
+  }
+  .photos-content {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 29em) {
+  .static-txt {
+    font-size: 2.8rem;
+  }
+  .dynamic-txt {
+    list-style: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3.6rem;
+    height: 2.8rem;
+    overflow: hidden;
+  }
+  .img-box {
+    height: 25.4rem;
+    width: 38.2rem;
+  }
+  .img-box--project {
+    width: 35.7rem;
+    height: 15.75rem;
+  }
+}

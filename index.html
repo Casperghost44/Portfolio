@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon-64.png" />
+    <link rel="apple-touch-icon" href="img/favicon-180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Artem's Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="container">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#overview--section">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects--section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience--section">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#personality--section">Personality</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact--section">Contact</a>
+            </li>
+            <button class="btn-mobile-nav btn-mobile-nav-close">
+              <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+            </button>
+          </ul>
+          <button class="btn-mobile-nav btn-mobile-nav-open">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          </button>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="profile-photo-container">
+          <div
+            class="image-wrap"
+            role="img"
+            aria-label="Artem Meshcheryakov's profile picture"
+          ></div>
+        </div>
+        <div class="pre-intro-section">
+          <h2 class="name-artem">Artem Meshcheryakov</h2>
+        </div>
+        <div class="intro-section">
+          <p class="static-txt">Hello, I am</p>
+          <ul class="dynamic-txt">
+            <li><span>Console.Writeline("Software Engineer");</span></li>
+            <li><span class="front-end-txt"></span></li>
+            <li><span>🎓International Student🎓</span></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="header-container">
+          <h2 class="main-header">Overview</h2>
+        </div>
+        <section
+          class="overview-section section__hidden"
+          id="overview--section"
+        >
+          <div class="imgs-container">
+            <div class="img-box">
+              <img
+                src="img/me20.webp"
+                alt="Artem Meshcheryakov playing basketball"
+                class="img-overview"
+              />
+              <img
+                src="img/VUM.webp"
+                alt="VUM campus in Varna"
+                class="img-overview"
+              />
+              <img
+                src="img/room2.webp"
+                alt="Artem Meshcheryakov's room with Pc, keyboard and monitor"
+                class="img-overview"
+              />
+              <ion-icon
+                name="chevron-back-outline"
+                class="arrow-icon arrow-right"
+              ></ion-icon>
+              <ion-icon
+                name="chevron-forward-outline"
+                class="arrow-icon arrow-left"
+              ></ion-icon>
+            </div>
+
+            <div class="list-dots">
+              <button class="dot" data-slide="0">&nbsp;</button>
+              <button class="dot" data-slide="1">&nbsp;</button>
+              <button class="dot" data-slide="2">&nbsp;</button>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="text-overview">
+              I am a proficient <span>20</span>-year-old Front-End Developer and
+              Software Engineer currently in the final year of my Bachelor's
+              degree program in Varna, Bulgaria. Armed with my keyboard, I excel
+              in crafting innovative web applications, dedicating my free time
+              to honing my development skills. I find great fulfillment in
+              expanding my knowledge and exploring new horizons. I am eager to
+              tackle any challenge that comes my way.
+            </p>
+            <a
+              class="primary-btn"
+              href="Docs/CV - Artem_Meshcheryakov.pdf"
+              download="CV_Artem"
+            >
+              Download cv <ion-icon name="download-outline"></ion-icon>
+            </a>
+          </div>
+        </section>
+      </div>
+      <section class="projects-section section__hidden" id="projects--section">
+        <div class="container header-container mb-mid">
+          <h2 class="secondary-header">Projects</h2>
+        </div>
+        <div class="projects-container container">
+          <ul class="projects-list">
+            <li class="project">
+              <div
+                class="img-box--project project--funder"
+                role="img"
+                aria-label="Call to action section in Funder project"
+              ></div>
+              <div class="project-details">
+                <h3 class="project-title">Funder &mdash; for a nightlife</h3>
+                <div class="tags">
+                  <div class="tag tag-webapp">Web Application</div>
+                  <div class="tag tag-ongoing">Ongoing</div>
+                  <div class="tag tag-fullstack">Full stack</div>
+                </div>
+                <div class="project-description">
+                  <p class="project-text">
+                    A diploma project intended to evolve into a web application
+                    post-graduation, currently functioning solely as a landing
+                    page.
+                  </p>
+                </div>
+                <div class="button-container">
+                  <a
+                    href="https://funderlandpage.netlify.app/"
+                    class="link demo-link"
+                    target="_blank"
+                    >Demo <ion-icon name="open-outline"></ion-icon
+                  ></a>
+                  <a
+                    href="https://github.com/Casperghost44/FunderAlpha"
+                    class="link git-link"
+                    target="_blank"
+                    ><ion-icon name="logo-github"></ion-icon> Look on Git</a
+                  >
+                </div>
+              </div>
+              <div class="tech-container">
+                <h6 class="tech-title">Tech stack:</h6>
+                <div class="tech-list">
+                  <div class="tech-skill">
+                    <img src="img/js.webp" alt="JavaScript logo" />
+                  </div>
+                  <div class="tech-skill">
+                    <img src="img/css.webp" alt="CSS Logo" />
+                  </div>
+                  <div class="tech-skill">
+                    <img src="img/html.webp" alt="HTML Logo" />
+                  </div>
+                  <div class="tech-skill">
+                    <img src="img/csharp.webp" alt="C# logo" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div
+                class="img-box--project project--omnifood"
+                role="img"
+                aria-label="The header of Omnifood project"
+              ></div>
+              <div class="project-details">
+                <h3 class="project-title">
+                  Omnifood &mdash; never cook again!
+                </h3>
+                <div class="tags">
+                  <div class="tag tag-webapp">Web Application</div>
+                  <div class="tag tag-frontend">Front-End</div>
+                  <div class="tag tag-study">Study Project</div>
+                </div>
+                <div class="project-description">
+                  <p class="project-text">
+                    Creating a landing page for a fictitious startup focused on
+                    online courses, showcasing proficiency in fundamental UI/UX
+                    design principles.
+                  </p>
+                </div>
+                <div class="button-container">
+                  <a
+                    href="https://omnifoodresp.netlify.app"
+                    target="_blank"
+                    class="link demo-link"
+                    >Demo <ion-icon name="open-outline"></ion-icon
+                  ></a>
+                  <a
+                    href="https://github.com/Casperghost44/Omnifood"
+                    class="link git-link"
+                    target="_blank"
+                    ><ion-icon name="logo-github"></ion-icon> Look on Git</a
+                  >
+                </div>
+              </div>
+              <div class="tech-container">
+                <h6 class="tech-title">Tech stack:</h6>
+                <div class="tech-list">
+                  <div class="tech-skill">
+                    <img src="img/js.webp" alt="JavaScript logo" />
+                  </div>
+                  <div class="tech-skill">
+                    <img src="img/css.webp" alt="CSS logo" />
+                  </div>
+
+                  <div class="tech-skill">
+                    <img src="img/html.webp" alt="HTML logo" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div
+                class="img-box--project project--bankist"
+                role="img"
+                aria-label="Header of the Bankist Landing page"
+              ></div>
+              <div class="project-details">
+                <h3 class="project-title">
+                  Bankist &mdash; modern and simple!
+                </h3>
+                <div class="tags">
+                  <div class="tag tag-webapp">Web Application</div>
+                  <div class="tag tag-frontend">Front-End</div>
+                  <div class="tag tag-study">Study Project</div>
+                </div>
+                <div class="project-description">
+                  <p class="project-text">
+                    A landing page for a fictional online course startup,
+                    showcasing advanced proficiency in JavaScript and DOM
+                    Events.
+                  </p>
+                </div>
+                <div class="button-container">
+                  <a
+                    href="https://bankistlandpage.netlify.app"
+                    target="_blank"
+                    class="link demo-link"
+                    >Demo <ion-icon name="open-outline"></ion-icon
+                  ></a>
+                  <a
+                    href="https://github.com/Casperghost44/BankistLanding"
+                    target="_blank"
+                    class="link git-link"
+                    ><ion-icon name="logo-github"></ion-icon> Look on Git</a
+                  >
+                </div>
+              </div>
+              <div class="tech-container">
+                <h6 class="tech-title">Tech stack:</h6>
+                <div class="tech-list">
+                  <div class="tech-skill">
+                    <img src="img/js.webp" alt="JavaScript logo" />
+                  </div>
+                  <div class="tech-skill">
+                    <img src="img/css.webp" alt="CSS logo" />
+                  </div>
+
+                  <div class="tech-skill">
+                    <img src="img/html.webp" alt="HTML logo" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div
+                class="img-box--project project--mapty"
+                role="img"
+                aria-label="Mapty web applicatin screenshot"
+              ></div>
+              <div class="project-details">
+                <h3 class="project-title">Mapty &mdash; mark your workouts!</h3>
+                <div class="tags">
+                  <div class="tag tag-webapp">Web Application</div>
+                  <div class="tag tag-frontend">Front-End</div>
+                  <div class="tag tag-study">Study Project</div>
+                </div>
+                <div class="project-description">
+                  <p class="project-text">
+                    A basic web application developed through online courses,
+                    showcasing competence in working with APIs and advanced
+                    JavaScript concepts.
+                  </p>
+                </div>
+                <div class="button-container">
+                  <a
+                    href="https://maptyappresp.netlify.app"
+                    class="link demo-link"
+                    target="_blank"
+                    >Demo <ion-icon name="open-outline"></ion-icon
+                  ></a>
+                  <a
+                    href="https://github.com/Casperghost44/MaptyApp"
+                    class="link git-link"
+                    target="_blank"
+                    ><ion-icon name="logo-github"></ion-icon> Look on Git</a
+                  >
+                </div>
+              </div>
+              <div class="tech-container">
+                <h6 class="tech-title">Tech stack:</h6>
+                <div class="tech-list">
+                  <div class="tech-skill">
+                    <img src="img/js.webp" alt="JavaScript logo" />
+                  </div>
+                  <div class="tech-skill">
+                    <img src="img/css.webp" alt="CSS logo" />
+                  </div>
+
+                  <div class="tech-skill">
+                    <img src="img/html.webp" alt="HTML logo" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div
+                class="img-box--project project--divcheker"
+                role="img"
+                aria-label="The division checker project screenshot"
+              ></div>
+              <div class="project-details">
+                <h3 class="project-title">
+                  Division cheker &mdash; is it divisible?
+                </h3>
+                <div class="tags">
+                  <div class="tag tag-webapp">Web Application</div>
+                  <div class="tag tag-frontend">Front-End</div>
+                </div>
+                <div class="project-description">
+                  <p class="project-text">
+                    A straightforward and enjoyable project featuring a
+                    user-friendly UI design, ideal for quick division
+                    calculations in everyday routines
+                  </p>
+                </div>
+                <div class="button-container">
+                  <a
+                    href="https://devisionchecker.netlify.app"
+                    target="_blank"
+                    class="link demo-link"
+                    >Demo <ion-icon name="open-outline"></ion-icon
+                  ></a>
+                  <a
+                    href="https://github.com/Casperghost44/DivisionChecker"
+                    class="link git-link"
+                    target="_blank"
+                    ><ion-icon name="logo-github"></ion-icon> Look on Git</a
+                  >
+                </div>
+              </div>
+              <div class="tech-container">
+                <h6 class="tech-title">Tech stack:</h6>
+                <div class="tech-list">
+                  <div class="tech-skill">
+                    <img src="img/js.webp" alt="JavaScript logo" />
+                  </div>
+                  <div class="tech-skill">
+                    <img src="img/css.webp" alt="CSS logo" />
+                  </div>
+
+                  <div class="tech-skill">
+                    <img src="img/html.webp" alt="HTML logo" />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="experiance-section mb-mid section__hidden"
+        id="experience--section"
+      >
+        <div class="container header-container mb-mid">
+          <h2 class="main-header">Experience</h2>
+        </div>
+        <div class="container experiance-container">
+          <div class="tab-container">
+            <button class="exp-tab exp-tab--active" data-tab="work">
+              <ion-icon name="briefcase-outline"></ion-icon>
+              <span>Work</span>
+            </button>
+            <button class="exp-tab" data-tab="study">
+              <ion-icon name="school-outline"></ion-icon>
+              <span>Education</span>
+            </button>
+            <button class="exp-tab" data-tab="certificates">
+              <ion-icon name="reader-outline"></ion-icon>
+              <span>Certificates</span>
+            </button>
+          </div>
+          <div class="exp-content">
+            <div
+              class="work-container exp-container--active exp-actual-content"
+            >
+              <div
+                class="job-img job--tulipr"
+                role="img"
+                aria-label="Tulupr's company logo"
+              ></div>
+              <div class="job-container">
+                <div class="job-title">
+                  <h2 class="main-header">Software Engineer Trainee</h2>
+                </div>
+                <div class="duration">
+                  <span>// Tulipr, Inc.</span>
+                  <span>// Duration: 3 months</span>
+                </div>
+
+                <div class="job-description">
+                  <p>
+                    Interned at a startup specializing in organizing global
+                    events, focusing on developing a platform for supply
+                    management using Microsoft tools like Power Apps and Power
+                    Automate.
+                  </p>
+                  <a
+                    href="https://ana.tulipr.com/"
+                    target="_blank"
+                    class="company-web"
+                    ><ion-icon name="globe-outline"></ion-icon> Website</a
+                  >
+                </div>
+              </div>
+              <div
+                class="job-img job--ezmey"
+                role="img"
+                aria-label="Ezmey's company logo"
+              ></div>
+              <div class="job-container">
+                <div class="job-title">
+                  <h2 class="main-header">Strategic Partnerships Expert</h2>
+                </div>
+                <div class="duration">
+                  <span>// Ezmey, LLC</span>
+                  <span>// Duration: 4 months</span>
+                </div>
+
+                <div class="job-description">
+                  <p>
+                    Interned at a startup operating as a marketplace for premium
+                    clothing, primarily conducting research through company
+                    outreach, analyzing extensive data clusters, and curating
+                    content for product pages on Shopify.
+                  </p>
+                  <a
+                    href="https://ezmeyboutique.com/"
+                    target="_blank"
+                    class="company-web"
+                    ><ion-icon name="globe-outline"></ion-icon> Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="study-container exp-actual-content">
+              <div
+                class="job-img study--vum"
+                role="img"
+                aria-label="Varna university of Management logo"
+              ></div>
+              <div class="job-container">
+                <div class="job-title">
+                  <h2 class="main-header">Varna University of Management</h2>
+                </div>
+                <div class="duration">
+                  <span>// Bachelor degree</span>
+                  <span>// Ongoing (Final year)</span>
+                </div>
+
+                <div class="job-description">
+                  <p>
+                    At my current university, I've acquired extensive knowledge
+                    within the Software Engineering faculty. This institution
+                    also offers a dual diploma program in collaboration with
+                    Cardiff Metropolitan University.
+                  </p>
+                  <a href="https://vum.bg/" target="_blank" class="company-web"
+                    ><ion-icon name="globe-outline"></ion-icon> Website</a
+                  >
+                </div>
+              </div>
+              <div
+                class="job-img study--mirea"
+                role="img"
+                aria-label="Russian Technological University logo"
+              ></div>
+              <div class="job-container">
+                <div class="job-title">
+                  <h2 class="main-header">Russian Technological University</h2>
+                </div>
+                <div class="duration">
+                  <span>// Unfinished Bachelor degree</span>
+                  <span>// Duration: 6 months</span>
+                </div>
+
+                <div class="job-description">
+                  <p>
+                    I attended one semester at this university, focusing on the
+                    Artificial Intelligence faculty, where I gained knowledge in
+                    linear algebra and discrete mathematics. Subsequently, I
+                    relocated and transferred to another university.
+                  </p>
+                  <a
+                    href="https://english.mirea.ru/"
+                    target="_blank"
+                    class="company-web"
+                    ><ion-icon name="globe-outline"></ion-icon> Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="certificates-container exp-actual-content">
+              <div class="certificate-item">
+                <div class="cert-img-box">
+                  <img
+                    src="/Docs/Artem_Meshcheryakov_Ezmey_Cert.webp"
+                    alt="Certificate of Ezmey's internship completion to Artem Meshcheryakov"
+                    class="cert-img"
+                  />
+                  <div class="blur-img">
+                    <a
+                      href="/Docs/Artem_Meshcheryakov_Ezmey_Cert.jpg"
+                      download="Ezmey_certificate_Artem"
+                      class="download-action"
+                      ><ion-icon
+                        name="code-download-outline"
+                        class="download-cert"
+                      ></ion-icon
+                    ></a>
+                  </div>
+                </div>
+                <span class="label-cert">// Certificate</span>
+                <span class="cert-title"
+                  >Ezmey certificate of complete internship</span
+                >
+              </div>
+              <div class="certificate-item">
+                <div class="cert-img-box">
+                  <img
+                    src="/Docs/Internship-Skills_page-0001.webp"
+                    alt="Ezmey's internship overview"
+                    class="cert-img"
+                  />
+                  <div class="blur-img">
+                    <a
+                      href="/Docs/Internship-Skills.pdf"
+                      download="Ezmey_overview_Artem"
+                      class="download-action"
+                      ><ion-icon
+                        name="code-download-outline"
+                        class="download-cert"
+                      ></ion-icon
+                    ></a>
+                  </div>
+                </div>
+                <span class="label-cert">// Overview</span>
+                <span class="cert-title">Overview of Ezmey Internship</span>
+              </div>
+              <div class="certificate-item">
+                <div class="cert-img-box">
+                  <img
+                    src="/Docs/Recomendation letter from Ezmey LLc_page-0001.webp"
+                    alt="Recomendation letter from Ezmey's company to Artem Meshcheryakov"
+                    class="cert-img"
+                  />
+                  <div class="blur-img">
+                    <a
+                      href="/Docs/Recomendation letter from Ezmey LLc.PDF"
+                      download="Ezmey_Recomendation_Letter_Artem"
+                      class="download-action"
+                      ><ion-icon
+                        name="code-download-outline"
+                        class="download-cert"
+                      ></ion-icon
+                    ></a>
+                  </div>
+                </div>
+                <span class="label-cert">// Recomendation Letter</span>
+                <span class="cert-title">Recomendation letter from Ezmey</span>
+              </div>
+              <div class="certificate-item">
+                <div class="cert-img-box">
+                  <img
+                    src="/Docs/Overview From tulipr.webp"
+                    alt="Overview of Tulipr's internship for Artem Meshcheryakov"
+                    class="cert-img"
+                  />
+                  <div class="blur-img">
+                    <a
+                      href="/Docs/Overview From tulipr.png"
+                      download="Tulipr_overview_Artem"
+                      class="download-action"
+                      ><ion-icon
+                        name="code-download-outline"
+                        class="download-cert"
+                      ></ion-icon
+                    ></a>
+                  </div>
+                </div>
+                <span class="label-cert">// Overview</span>
+                <span class="cert-title">Overview of Tulipr's internship</span>
+              </div>
+              <div class="certificate-item">
+                <div class="cert-img-box">
+                  <img
+                    src="/Docs/Udemy1.webp"
+                    alt="Udemy certificate of completeing HTML & CSS course"
+                    class="cert-img"
+                  />
+                  <div class="blur-img">
+                    <a
+                      href="/Docs/Udemy1.jpg"
+                      download="Udemy_HTML_certificate_Artem"
+                      class="download-action"
+                      ><ion-icon
+                        name="code-download-outline"
+                        class="download-cert"
+                      ></ion-icon
+                    ></a>
+                  </div>
+                </div>
+                <span class="label-cert">// Certificate</span>
+                <span class="cert-title">Udemy HTML & CSS certificate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="personality-section section__hidden"
+        id="personality--section"
+      >
+        <div class="container header-container">
+          <h2 class="secondary-header">Personality</h2>
+        </div>
+        <div class="container personality-container">
+          <div class="text-content">
+            <div class="description-perso">
+              <p>
+                I am a highly sociable individual with a passion for basketball,
+                which has honed my teamwork skills. My overarching ambition is
+                to become a versatile Front-End Developer adept in crafting
+                solutions across current and emerging frameworks. With a strong
+                drive and ambition, I am eager to take further strides in
+                advancing my career in Front-End Development!
+              </p>
+            </div>
+            <div class="perso-skills">
+              <ul class="soft-skills">
+                <li class="soft-skill">soft_skills = [ "❤️‍🔥 Passionet",</li>
+                <li class="soft-skill">"🫂 Team worker",</li>
+                <li class="soft-skill">"🧨 Stress Resistant",</li>
+                <li class="soft-skill">"🧠 Critical thinker" ]</li>
+              </ul>
+              <ul class="lang-skills">
+                <li class="soft-skill">
+                  lang_skills = { "🇷🇺 Russsian" : "Native",
+                </li>
+                <li class="soft-skill">"🇬🇧 English" : "C1",</li>
+                <li class="soft-skill">"🇫🇷 French" : "B1",</li>
+                <li class="soft-skill">"🇧🇬 Bulgarian" : "A2" }</li>
+              </ul>
+            </div>
+          </div>
+          <div class="photos-content">
+            <div class="img-box-perso">
+              <img
+                src="/img/basket2.webp"
+                alt="Artem Meshcheryakov is playing basketball"
+              />
+            </div>
+            <div class="img-box-perso">
+              <img
+                src="/img/gang1.webp"
+                alt="Artem Meshcheryakov with his friends are standing on the balcony"
+              />
+            </div>
+            <div class="img-box-perso">
+              <img
+                src="/img/me_cute.webp"
+                alt="Artem Meshcheryakov is smiling with a pumpkin"
+              />
+            </div>
+            <div class="img-box-perso">
+              <img
+                src="/img/gang2.webp"
+                alt="Artem Mescheryakov and his friends are dancing on the party"
+              />
+            </div>
+            <div class="img-box-perso">
+              <img
+                src="/img/me_travel.webp"
+                alt="Artem Mescheryakov is standing nearby palace in Bucharest"
+              />
+            </div>
+            <div class="img-box-perso">
+              <img
+                src="/img/gang3.webp"
+                alt="Artem Mescheryakov and his friends are on a prompt"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact-section mb-mid section__hidden"
+        id="contact--section"
+      >
+        <div class="container header-container">
+          <h2 class="main-header">Contact me</h2>
+        </div>
+        <div class="container contact-container">
+          <ul class="contact-list-links">
+            <li>
+              <a
+                href="https://github.com/Casperghost44"
+                class="contact-item"
+                name="github"
+                target="_blank"
+                ><ion-icon name="logo-github"></ion-icon>
+                <span>Casperghost44</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/artem-meshcheryakov-662935252/"
+                class="contact-item"
+                name="linkedin"
+                target="_blank"
+                ><ion-icon name="logo-linkedin"></ion-icon>
+                <span>Artem Meshcheryakov</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/_friendlyghostcasper_/"
+                target="_blank"
+                class="contact-item"
+                name="instagram"
+                ><ion-icon name="logo-instagram"></ion-icon>
+                <span>_friendlyghostcasper_</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.discordapp.com/users/_casper44"
+                target="_blank"
+                class="contact-item"
+                name="discord"
+                ><ion-icon name="logo-discord"></ion-icon>
+                <span>_casper44</span></a
+              >
+            </li>
+          </ul>
+          <ul class="contact-essential-list">
+            <li>
+              <a
+                href="mailto:artemmescheryakov34@gmail.com"
+                class="contact-item"
+              >
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>artemmescheryakov34@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+359877543971" class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>+359-87-754-3971</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-container">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li>
+              <a href="#overview--section" class="footer-link">Overview</a>
+            </li>
+            <li>
+              <a href="#projects--section" class="footer-link">Projects</a>
+            </li>
+            <li>
+              <a href="#experience--section" class="footer-link">Experience</a>
+            </li>
+            <li>
+              <a href="#personality--section" class="footer-link"
+                >Personality</a
+              >
+            </li>
+            <li>
+              <a href="#contact--section" class="footer-link">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="copyright">
+          Copyright &copy; by <span>Artem Mescheryakov</span>. All rights are
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="js/app.js"></script>
+  </body>
+</html>

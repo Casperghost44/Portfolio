@@ -32,6 +32,7 @@ header {
 .container {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 2rem 1rem;
 }
 .main-header {
   font-size: 3.6rem;

@@ -125,10 +125,25 @@ function resetAutoChange() {
 
 startAutoChange();
 
-age.textContent = (
-  (new Date() - new Date("November 25, 2003 00:00:00")) /
-  31556952000
-).toFixed(0);
+function calculateAge(dob) {
+  const birthDate = new Date(dob);
+  const today = new Date();
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+
+  // Adjust age if the current date has not yet reached the birth date this year
+  if (
+    monthDiff < 0 ||
+    (monthDiff === 0 && today.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+
+  return age;
+}
+
+age.textContent = calculateAge(`2003-11-25`).toFixed(0);
 const navHeight = navBar.getBoundingClientRect().height;
 
 const obs = new IntersectionObserver(

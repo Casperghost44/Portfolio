@@ -640,6 +640,10 @@ section {
   background-image: url("/img/tulipr.webp");
 }
 
+.job--djb {
+  background-color: #e9ecef;
+}
+
 .job-container {
   display: flex;
   flex-direction: column;
@@ -695,8 +699,8 @@ section {
   background-image: url("/img/VUM-logo.webp");
 }
 
-.study--mirea {
-  background-image: url("/img/mirea-logo.webp");
+.study--cardiff {
+  background-image: url("/img/cardiff_met.png");
 }
 
 .certificates-container {

@@ -1,5 +1,5 @@
 .nav-bar {
-  padding: 4.8rem;
+  padding: 2.4rem;
   margin-bottom: 4.8rem;
 }
 
@@ -14,7 +14,7 @@
 .nav-bar.sticky {
   position: fixed;
   background-color: #3b5bdb;
-  height: 6rem;
+  height: 10rem;
   width: 100%;
   z-index: 999;
 }
@@ -640,8 +640,12 @@ section {
   background-image: url("/img/tulipr.webp");
 }
 
+.job--perfecto {
+  background-image: url("/img/LogoPerfecto.jpg");
+}
+
 .job--djb {
-  background-color: #e9ecef;
+  background-image: url("/img/djb_logo.jpg");
 }
 
 .job-container {
